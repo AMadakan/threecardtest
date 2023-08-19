@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding-top: 200px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+@media (max-width: 800px) {
+    .card-container {
+        flex-direction: column;
+    }
+}
+
+.card-container>div {
+    height: 500px;
+    width: 300px;
+    padding: 30px;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(fonts/Megidana.otf)
+}
+
+@font-face {
+    font-family: myfont2;
+    src: url(fonts/reailge.otf)
+}
+
+.card-content {
+    height: 100%;
+    position: relative;
+    /* padding: 30px; */
+    text-align: left;
+}
+
+.card-content h3 {
+    font-weight: bolder;
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
+
+.card-content p {
+    padding-bottom: 40px;
+    display: block;
+    font-size: medium;
+}
+
+.card-content .logo {
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+div h3 {
+    font-family: myfont;
+    color: whitesmoke;
+}
+
+div p {
+    font-family: myfont2;
+    color: whitesmoke;
+}
+
+
+/* .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+} */
+
+div {
+    margin: 0;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+
+/* button {
+
+    
+} */
+
+.card-content button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* text-align: center; */
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: none;
+    background-color: whitesmoke;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: medium;
+}
+
+.sedan {
+    background-color: #e28625;
+}
+
+.sedan button a {
+    text-decoration: none;
+    color: #e28625;
+}
+
+.suv {
+    background-color: #006a71;
+}
+
+.suv button a {
+    text-decoration: none;
+    color: #00403e;
+}
+
+.luxury {
+    background-color: #00403e;
+}
+
+.luxury button a {
+    text-decoration: none;
+    color: #00403e;
+}
